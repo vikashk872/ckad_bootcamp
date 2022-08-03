@@ -5,11 +5,11 @@ metadata:
         app: events-web
    name: events-web
 spec:
-   replicas: 4
+   replicas: 1
    selector:
        matchLabels:
-           app: events-web
-           ver: v1.0
+          app: events-web
+          ver: v1.0
    template:
       metadata:
            labels:

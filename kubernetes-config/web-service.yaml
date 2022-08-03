@@ -11,5 +11,5 @@ spec:
      targetPort: 8080
    selector:
      app: events-web
-     ver: v2.0
+     ver: v1.0
    type: LoadBalancer
