@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
    labels:
         app: events-web
-   name: events-web
+   name: events-web-v2.0
 spec:
    replicas: 4
    selector:
        matchLabels:
            app: events-web
-           ver: v1.0
+           ver: v2.0
    template:
       metadata:
            labels:
              app: events-web
-             ver: v1.0
+             ver: v2.0
       spec:
           containers:
-          - image: gcr.io/roidtc-august22-u215/events-website:v1.0
-            name: events-web
+          - image: gcr.io/roidtc-august22-u215/events-website:v2.0
+            name: events-web-v2
             ports:
             - containerPort: 8080
             env:
